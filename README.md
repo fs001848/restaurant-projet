@@ -1,6 +1,14 @@
-# my-app-vue-cli2
+# Projet Javascrit
 
-> A Vue.js project
+Ce projet est une application **VueJS en mode CLI**.
+- avoir des **informations** sur un restaurant
+- connaitre des **menus différents**
+- choisir ce que l'on veut **commander** (plats, quantité)
+- avoir un récapitulatif avec le **prix total**
+
+Le tout en utilisant les composants custom Vuejs.
+
+
 
 ## Build Setup
 
@@ -14,5 +22,10 @@ npm run dev
 # build for production with minification
 npm run build
 ```
+### Auteurs
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Pauline Geldreich & Sylvain Fischman
+M1 MIAGE
+Université Nice Sophia Antipolis
+
+
