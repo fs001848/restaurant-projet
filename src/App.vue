@@ -53,29 +53,46 @@
         :headers="headers"
         :items="restaurants"
         class="elevation-1"
+        item-key="name"
       >
 
         <template slot="items" slot-scope="props">
-
-          <td>{{ props.item.name }}</td>
-          <td class="text-xs-left">{{ props.item.cuisine }}</td>
-          <td class="justify-center layout px-0">
+          <tr @click="props.expanded = !props.expanded" >
+          <td >{{ props.item.name }}</td>
+          <td class="text-xs-left" >{{ props.item.cuisine }}</td>
+          <td class="justify-center layout px-0" >
             <v-icon
-              small
-              class="mr-2"
-              @click="editRestaurant(props.item)"
+                    small
+                    class="mr-2"
+                    @click="editRestaurant(props.item)"
             >
               edit
             </v-icon>
             <v-icon
-              small
-              @click="deleteItem(props.item)"
+                    small
+                    @click="deleteItem(props.item)"
             >
               delete
             </v-icon>
           </td>
+          </tr>
+
+
 
         </template>
+        <template slot="expand" slot-scope="props" >
+          <v-card flat>
+            <v-card-text id="menu">
+
+              <app-menu-restaurant :cuisine ="props.item.cuisine"></app-menu-restaurant>
+
+
+            </v-card-text>
+
+          </v-card>
+
+        </template>
+
       </v-data-table>
       </div>
     </v-app>
@@ -84,6 +101,7 @@
 
 <script>
 
+import Menu from './components/Menu.vue';
 
 export default {
   name: 'app',
@@ -135,7 +153,7 @@ export default {
       nom: '',
       cuisine: '',
       page: 0,
-      pagesize: 30,
+      pagesize: 150,
       nomRecherche: "",
       editedIndex: -1,
       editedItem: {
@@ -143,6 +161,10 @@ export default {
         cuisine: ''
       }
     }
+  },
+
+  components : { //LOCAL COMPONENT
+    'app-menu-restaurant' : Menu
   },
 
   computed: {
@@ -285,6 +307,85 @@ export default {
       }
       this.close();
 
+    },
+
+    findMenu(item) {
+      switch (item.cuisine) {
+
+        case "American" :
+          document.getElementById("menuBtn").remove();
+          var img = document.createElement('img');
+          img.src = "src/assets/american.jpg";
+          img.height = "100";
+          document.getElementById("menu").appendChild(img);
+
+          break;
+
+        case "Delicatessen" :
+          document.getElementById("menuBtn").remove();
+          var img = document.createElement('img');
+          img.src = "src/assets/delicatessen.jpg";
+          img.height = "100";
+          document.getElementById("menu").appendChild(img);
+          break;
+
+        case "Ice Cream, Gelato, Yogurt, Ices" :
+          document.getElementById("menuBtn").remove();
+          var img = document.createElement('img');
+          img.src = "src/assets/ice-cream.jpg";
+          img.height = "100";
+          document.getElementById("menu").appendChild(img);
+          break;
+
+        case "Irish" :
+          document.getElementById("menuBtn").remove();
+          var img = document.createElement('img');
+          img.src = "src/assets/irish.jpg";
+          img.height = "100";
+          document.getElementById("menu").appendChild(img);
+
+          break;
+
+        case "Donuts" :
+
+          document.getElementById("menuBtn").remove();
+          var img = document.createElement('img');
+          img.src = "src/assets/donuts.jpg";
+          img.height = "100";
+          document.getElementById("menu").appendChild(img);
+
+          break;
+
+        case "Chicken" :
+
+          document.getElementById("menuBtn").remove();
+          var img = document.createElement('img');
+          img.src = "src/assets/chicken.jpg";
+          img.height = "100";
+          document.getElementById("menu").appendChild(img);
+
+          break;
+
+        case "Chinese" :
+
+          document.getElementById("menuBtn").remove();
+          var img = document.createElement('img');
+          img.src = "src/assets/chinese.jpg";
+          img.height = "100";
+          document.getElementById("menu").appendChild(img);
+
+          break;
+
+        default :
+
+          document.getElementById("menuBtn").remove();
+          var img = document.createElement('img');
+          img.src = "src/assets/autre.jpg";
+          img.height = "100";
+          document.getElementById("menu").appendChild(img);
+          break;
+
+      }
     }
 
   }
