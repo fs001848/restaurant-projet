@@ -1,14 +1,16 @@
 <template>
     <div id="menu-restaurant">
         <v-btn v-on:click="show = !show" id="menuBtn" color="primary">MENU</v-btn>
-        <v-app id="inspire" v-if="show">
+
+            <div v-if="show">
             <v-layout row >
                 <v-flex xs12 sm4 offset-sm3>
-                    <v-card>
-                        <v-img src="src/assets/american.jpg" max-height="300px">
+                    <div v-for="menu in menus" v-if='menu.cuisine == cuisine'>
+                    <v-card >
+                        <v-img :src="menu.picture" max-height="300px">
                         </v-img>
                         <v-card-title primary-title>
-                            <div v-for="menu in menus" v-if='menu.cuisine == cuisine'>
+                            <div >
                                 <div class="headline"> Menu du jour </div>
                                 <p> {{menu.entree}} // {{menu.plat}} // {{menu.dessert}} </p>
                             </div>
@@ -18,10 +20,12 @@
 
                         </v-card-actions>
                     </v-card>
+                    </div>
                 </v-flex>
             </v-layout>
-        </v-app>
-        <app-entree-menu v-if="see" :cuisine="cuisine"></app-entree-menu>
+            <app-entree-menu v-if="see" :cuisine="cuisine"></app-entree-menu>
+            </div>
+
 
 
     </div>
@@ -38,7 +42,7 @@ import Entree from './Entree.vue';
             return {
                 menus : [
                     {cuisine : "American", picture:"src/assets/american.jpg", entree:"Onion rings", plat: "Hamburger of the day", dessert: "Milshake"},
-                    {cuisine : "Italian", entree: "Pasta", plat: "Pizza", dessert: 'Tiramisu'}
+                    {cuisine : "Italian",picture:"src/assets/autre.jpg", entree: "Pasta", plat: "Pizza", dessert: 'Tiramisu'}
                 ],
                 show: false,
                 see:false

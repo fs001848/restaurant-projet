@@ -8,10 +8,14 @@
 
         <v-spacer></v-spacer>
 
-        <v-toolbar-items class="hidden-sm-and-down">
+        <v-toolbar-items>
+
+          <v-btn >
+            <app-commande></app-commande>
+          </v-btn>
 
           <v-dialog v-model="dialog" max-width="500px">
-            <v-btn slot="activator" top right large color="primary" class="mb-2">Ajouter un restaurant</v-btn>
+            <v-btn slot="activator" top color="primary" class="mb-2">Ajouter un restaurant</v-btn>
             <v-card>
               <v-card-title>
                 <span class="headline">Nouveau Restaurant</span>
@@ -35,6 +39,7 @@
             </v-card>
           </v-dialog>
 
+
           <v-text-field
             v-model="nomRecherche"
             v-on:input="getRestaurantsFromServer()"
@@ -43,6 +48,7 @@
             single-line
             hide-details
           ></v-text-field>
+
 
         </v-toolbar-items>
       </v-toolbar>
@@ -85,7 +91,7 @@
             <v-card-text id="menu">
 
               <app-menu-restaurant :cuisine ="props.item.cuisine"></app-menu-restaurant>
-
+              <app-restau-details :nom = "props.item.name" :cuisine ="props.item.cuisine"></app-restau-details>
 
             </v-card-text>
 
@@ -102,6 +108,8 @@
 <script>
 
 import Menu from './components/Menu.vue';
+import Details from './components/Details.vue';
+import Commande from './components/Commande.vue';
 
 export default {
   name: 'app',
@@ -164,7 +172,11 @@ export default {
   },
 
   components : { //LOCAL COMPONENT
-    'app-menu-restaurant' : Menu
+
+    'app-menu-restaurant' : Menu ,
+    'app-restau-details' : Details,
+    'app-commande' : Commande
+
   },
 
   computed: {
