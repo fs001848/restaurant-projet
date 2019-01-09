@@ -93,7 +93,8 @@
               <app-menu-restaurant :cuisine ="props.item.cuisine" :comm="comm"></app-menu-restaurant>
               <app-restau-details :nom = "props.item.name" :cuisine ="props.item.cuisine"
                                   :zip = "props.item.address.zipcode" :bat = "props.item.address.building"
-                                  :quartier="props.item.borough" :rue="props.item.address.street"></app-restau-details>
+                                  :quartier="props.item.borough" :rue="props.item.address.street"
+                                  :note="props.item.grades[0].grade"></app-restau-details>
 
             </v-card-text>
 
@@ -122,6 +123,7 @@ export default {
         zip: [],
         bat: [],
         rue: [],
+        note:[],
         quartier:[],
       selected: "",
       headers: [
