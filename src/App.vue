@@ -91,7 +91,9 @@
             <v-card-text id="menu">
 
               <app-menu-restaurant :cuisine ="props.item.cuisine" :comm="comm"></app-menu-restaurant>
-              <app-restau-details :nom = "props.item.name" :cuisine ="props.item.cuisine"></app-restau-details>
+              <app-restau-details :nom = "props.item.name" :cuisine ="props.item.cuisine"
+                                  :zip = "props.item.address.zipcode" :bat = "props.item.address.building"
+                                  :quartier="props.item.borough" :rue="props.item.address.street"></app-restau-details>
 
             </v-card-text>
 
@@ -117,6 +119,10 @@ export default {
     return {
       dialog: false,
       comm : [],
+        zip: [],
+        bat: [],
+        rue: [],
+        quartier:[],
       selected: "",
       headers: [
         {

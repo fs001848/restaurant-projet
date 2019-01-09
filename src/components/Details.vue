@@ -12,6 +12,7 @@
                         </v-card-title>
                         <v-card-text>
                             <p> Le restaurant {{nom}} vous propose une cuisine {{cuisine}} qui régalera petits et grands. </p>
+                            <p>Adresse : {{bat}} {{rue}} {{zip}} {{quartier}}</p>
                         </v-card-text>
 
                     </v-card>
@@ -25,7 +26,7 @@
 
 <script>
     export default {
-        props : ['nom', 'cuisine'],
+        props : ['nom', 'cuisine', 'bat', 'rue', 'zip', 'quartier'],
         name: "Details",
 
         data() {
