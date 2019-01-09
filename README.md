@@ -8,7 +8,10 @@ Ce projet est une application **VueJS en mode CLI**.
 
 Le tout en utilisant les composants custom Vuejs.
 
+## Serveur
 
+Le serveur est lancé sur le ```port 8080``` tel quel, 
+sans modifications.
 
 ## Build Setup
 
