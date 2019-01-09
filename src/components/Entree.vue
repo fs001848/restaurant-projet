@@ -71,9 +71,9 @@
 
         data() {
             return {
-                checkbox : false,
-                checkedEntrees : [],
-                show : false,
+                checkbox: false,
+                checkedEntrees: [],
+                show: false,
                 boxes: [1, 1, 1, 1, 1],
 
 
@@ -466,279 +466,276 @@
                             prix: "6",
                             id: 4
                         }
+                    ],
+                    'Sandwiches/Salads/Mixed Buffet': [
+                        {
+                            entree: "Ranch Sandwich",
+                            prix: "9",
+                            id: 0
+                        },
+                        {
+                            entree: "Sea food Sanwich",
+                            prix: "12",
+                            id: 1
+                        },
+                        {
+                            entree: "Moutain Sandwich",
+                            prix: "10",
+                            id: 2
+                        },
+                        {
+                            entree: "Greek Salad",
+                            prix: "7",
+                            id: 3
+                        },
+                        {
+                            entree: "Vegetables",
+                            prix: "9",
+                            id: 4
+                        }
+                    ],
+                    'Café/Coffee/Tea': [
+                        {
+                            entree: "Expresso",
+                            prix: "1",
+                            id: 0
+                        },
+                        {
+                            entree: "Double Expresso",
+                            prix: "2",
+                            id: 1
+                        },
+                        {
+                            entree: "Fit Tea",
+                            prix: "3",
+                            id: 2
+                        },
+                        {
+                            entree: "Black Tea ",
+                            prix: "2",
+                            id: 3
+                        },
+                        {
+                            entree: "Plan Tea",
+                            prix: "6",
+                            id: 4
+                        }
+                    ], 'Bakery': [
+                        {
+                            entree: "Croissant",
+                            prix: "1",
+                            id: 0
+                        },
+                        {
+                            entree: "Baguette",
+                            prix: "2",
+                            id: 1
+                        },
+                        {
+                            entree: "Pain au Chocolat",
+                            prix: "1",
+                            id: 2
+                        },
+                        {
+                            entree: "Bakery Assortment",
+                            prix: "6",
+                            id: 3
+                        },
+                        {
+                            entree: "Homemade Onion Pizza",
+                            prix: "7",
+                            id: 4
+                        }
+                    ],
+                    Mexican: [
+                        {
+                            entree: "Ensaladas",
+                            prix: "6",
+                            id: 0
+                        },
+                        {
+                            entree: "Calamari Steak Strips",
+                            prix: "8",
+                            id: 1
+                        },
+                        {
+                            entree: "Jamon Iberico Tapas",
+                            prix: "9",
+                            id: 2
+                        },
+                        {
+                            entree: "Smoked Salmon Flatbread ",
+                            prix: "11",
+                            id: 3
+                        },
+                        {
+                            entree: "Potato Croquetes",
+                            prix: "6",
+                            id: 4
+                        }
+                    ],
+                    Steak: [
+                        {
+                            entree: "Lamb Steak",
+                            prix: "10",
+                            id: 0
+                        },
+                        {
+                            entree: "Pork Steak",
+                            prix: "8",
+                            id: 1
+                        },
+                        {
+                            entree: "Beef Steak",
+                            prix: "9",
+                            id: 2
+                        },
+                        {
+                            entree: "Fish Steak ",
+                            prix: "11",
+                            id: 3
+                        },
+                        {
+                            entree: "Chicken Steak",
+                            prix: "7",
+                            id: 4
+                        }
+                    ],
+                    Polish: [
+                        {
+                            entree: "Polish Gazpacho",
+                            prix: "8",
+                            id: 0
+                        },
+                        {
+                            entree: "Goulash",
+                            prix: "8",
+                            id: 1
+                        },
+                        {
+                            entree: "Pickles Polish Soup",
+                            prix: "6",
+                            id: 2
+                        },
+                        {
+                            entree: "Smoked Salmon Flatbread ",
+                            prix: "11",
+                            id: 3
+                        },
+                        {
+                            entree: "Potato Croquetes",
+                            prix: "6",
+                            id: 4
+                        }
+                    ],
+                    Caribbean: [
+                        {
+                            entree: "Praws",
+                            prix: "8",
+                            id: 0
+                        },
+                        {
+                            entree: "Caribbean Chicken",
+                            prix: "8",
+                            id: 1
+                        },
+                        {
+                            entree: "Spicy Soup",
+                            prix: "6",
+                            id: 2
+                        },
+                        {
+                            entree: "Caribbean Salad ",
+                            prix: "7",
+                            id: 3
+                        },
+                        {
+                            entree: "Caribbean Toast",
+                            prix: "6",
+                            id: 4
+                        }
+                    ],
+                    Turkish: [
+                        {
+                            entree: "Kanouga",
+                            prix: "8",
+                            id: 0
+                        },
+                        {
+                            entree: "Melemen",
+                            prix: "8",
+                            id: 1
+                        },
+                        {
+                            entree: "Güvec",
+                            prix: "9",
+                            id: 2
+                        },
+                        {
+                            entree: "Halka Tatlisi ",
+                            prix: "11",
+                            id: 3
+                        },
+                        {
+                            entree: "Irmik Tatlisi",
+                            prix: "6",
+                            id: 4
+                        }
+                    ], Spanish: [
+                        {
+                            entree: "Tortillas",
+                            prix: "6",
+                            id: 0
+                        },
+                        {
+                            entree: "Croquetas de Jamon",
+                            prix: "7",
+                            id: 1
+                        },
+                        {
+                            entree: "Patatas Bravas",
+                            prix: "5",
+                            id: 2
+                        },
+                        {
+                            entree: "Tapas Jamon Iberico",
+                            prix: "7",
+                            id: 3
+                        },
+                        {
+                            entree: "Tapas Roasted Salmon ",
+                            prix: "8",
+                            id: 4
+                        }
+                    ], "Hamburgers": [
+                        {
+                            entree: "Bacon Burger",
+                            prix: "13",
+                            id: 0
+                        },
+                        {
+                            entree: "Chicken Burger",
+                            prix: "13",
+                            id: 1
+                        },
+                        {
+                            entree: "Fish Burger",
+                            prix: "12",
+                            id: 2
+                        },
+                        {
+                            entree: "Cheese Burger",
+                            prix: "11",
+                            id: 3
+                        },
+                        {
+                            entree: "Potatoes",
+                            prix: "6",
+                            id: 4
+                        }
                     ]
-                },
-                'Sandwiches/Salads/Mixed Buffet' : [
-                    {
-                        entree: "Ranch Sandwich",
-                        prix: "9",
-                        id: 0
-                    },
-                    {
-                        entree: "Sea food Sanwich",
-                        prix: "12",
-                        id: 1
-                    },
-                    {
-                        entree: "Moutain Sandwich",
-                        prix: "10",
-                        id: 2
-                    },
-                    {
-                        entree: "Greek Salad",
-                        prix: "7",
-                        id: 3
-                    },
-                    {
-                        entree: "Vegetables",
-                        prix: "9",
-                        id: 4
-                    }
-                ],
-                'Café/Coffee/Tea': [
-                {
-                    entree: "Expresso",
-                    prix: "1",
-                    id: 0
-                },
-                {
-                    entree: "Double Expresso",
-                    prix: "2",
-                    id: 1
-                },
-                {
-                    entree: "Fit Tea",
-                    prix: "3",
-                    id: 2
-                },
-                {
-                    entree: "Black Tea ",
-                    prix: "2",
-                    id: 3
-                },
-                {
-                    entree: "Plan Tea",
-                    prix: "6",
-                    id: 4
-                }
-            ],
-                Bakery: [
-                    {
-                        entree: "Croissant",
-                        prix: "1",
-                        id: 0
-                    },
-                    {
-                        entree: "Baguette",
-                        prix: "2",
-                        id: 1
-                    },
-                    {
-                        entree: "Pain au Chocolat",
-                        prix: "1",
-                        id: 2
-                    },
-                    {
-                        entree: "Bakery Assortment",
-                        prix: "6",
-                        id: 3
-                    },
-                    {
-                        entree: "Homemade Onion Pizza",
-                        prix: "7",
-                        id: 4
-                    }
-                ],
-                Mexican: [
-                    {
-                        entree: "Ensaladas",
-                        prix: "6",
-                        id: 0
-                    },
-                    {
-                        entree: "Calamari Steak Strips",
-                        prix: "8",
-                        id: 1
-                    },
-                    {
-                        entree: "Jamon Iberico Tapas",
-                        prix: "9",
-                        id: 2
-                    },
-                    {
-                        entree: "Smoked Salmon Flatbread ",
-                        prix: "11",
-                        id: 3
-                    },
-                    {
-                        entree: "Potato Croquetes",
-                        prix: "6",
-                        id: 4
-                    }
-                ],
-                Steak: [
-                    {
-                        entree: "Lamb Steak",
-                        prix: "10",
-                        id: 0
-                    },
-                    {
-                        entree: "Pork Steak",
-                        prix: "8",
-                        id: 1
-                    },
-                    {
-                        entree: "Beef Steak",
-                        prix: "9",
-                        id: 2
-                    },
-                    {
-                        entree: "Fish Steak ",
-                        prix: "11",
-                        id: 3
-                    },
-                    {
-                        entree: "Chicken Steak",
-                        prix: "7",
-                        id: 4
-                    }
-                ],
-                Polish: [
-                    {
-                        entree: "Polish Gazpacho",
-                        prix: "8",
-                        id: 0
-                    },
-                    {
-                        entree: "Goulash",
-                        prix: "8",
-                        id: 1
-                    },
-                    {
-                        entree: "Pickles Polish Soup",
-                        prix: "6",
-                        id: 2
-                    },
-                    {
-                        entree: "Smoked Salmon Flatbread ",
-                        prix: "11",
-                        id: 3
-                    },
-                    {
-                        entree: "Potato Croquetes",
-                        prix: "6",
-                        id: 4
-                    }
-                ],
-                Caribbean: [
-                    {
-                        entree: "Praws",
-                        prix: "8",
-                        id: 0
-                    },
-                    {
-                        entree: "Caribbean Chicken",
-                        prix: "8",
-                        id: 1
-                    },
-                    {
-                        entree: "Spicy Soup",
-                        prix: "6",
-                        id: 2
-                    },
-                    {
-                        entree: "Caribbean Salad ",
-                        prix: "7",
-                        id: 3
-                    },
-                    {
-                        entree: "Caribbean Toast",
-                        prix: "6",
-                        id: 4
-                    }
-                ],
-                Turkish: [
-                    {
-                        entree: "Kanouga",
-                        prix: "8",
-                        id: 0
-                    },
-                    {
-                        entree: "Melemen",
-                        prix: "8",
-                        id: 1
-                    },
-                    {
-                        entree: "Güvec",
-                        prix: "9",
-                        id: 2
-                    },
-                    {
-                        entree: "Halka Tatlisi ",
-                        prix: "11",
-                        id: 3
-                    },
-                    {
-                        entree: "Irmik Tatlisi",
-                        prix: "6",
-                        id: 4
-                    }
-                ],
-                Spanish: [
-                    {
-                        entree: "Tortillas",
-                        prix: "6",
-                        id: 0
-                    },
-                    {
-                        entree: "Croquetas de Jamon",
-                        prix: "7",
-                        id: 1
-                    },
-                    {
-                        entree: "Patatas Bravas",
-                        prix: "5",
-                        id: 2
-                    },
-                    {
-                        entree: "Tapas Jamon Iberico",
-                        prix: "7",
-                        id: 3
-                    },
-                    {
-                        entree: "Tapas Roasted Salmon ",
-                        prix: "8",
-                        id: 4
-                    }
-                ],
-                Hamburgers: [
-                    {
-                        entree: "Bacon Burger",
-                        prix: "13",
-                        id: 0
-                    },
-                    {
-                        entree: "Chicken Burger",
-                        prix: "13",
-                        id: 1
-                    },
-                    {
-                        entree: "Fish Burger",
-                        prix: "12",
-                        id: 2
-                    },
-                    {
-                        entree: "Cheese Burger",
-                        prix: "11",
-                        id: 3
-                    },
-                    {
-                        entree: "Potatoes",
-                        prix: "6",
-                        id: 4
-                    }
-                ]
 
+                }
             }
         },
         methods : {
