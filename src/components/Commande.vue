@@ -29,6 +29,7 @@
                 </v-toolbar>
                 <v-list>
                     <v-subheader> Récapitulatif de vos entrées</v-subheader>
+
                     <template v-for="entree in comm" v-if="entree[3] != 0">
                     <v-list-tile>
                         <v-list-tile-avatar>
@@ -84,7 +85,7 @@
                 var res = 0;
                 var i = 0;
                 for (i in this.comm){
-                    res += (this.comm[i][1] * this.comm[i][2])
+                    res += (this.comm[i][1] * this.comm[i][3])
                 }
                 this.total = res
             },
@@ -93,7 +94,11 @@
             },
             panier() {
                 this.dialog=false ;
-                this.comm = [];
+                var i = 0 ;
+                for (i = this.comm.length ; i > 0 ; i--){
+                    this.comm.pop()
+                };
+                this.total = 0;
                 alert('Merci de votre commande')
             }
 

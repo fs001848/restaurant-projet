@@ -5,8 +5,6 @@
             <v-flex xs12 sm4 offset-sm3>
                 <v-card >
                 <v-card-title class="headline"> Voici les entrees</v-card-title>
-
-
                     <v-list two-line  >
 
                         <div v-for="(item, key) in list"
@@ -76,7 +74,7 @@
                 checkbox : false,
                 checkedEntrees : [],
                 show : false,
-                boxes: [0, 0, 0, 0, 0],
+                boxes: [1, 1, 1, 1, 1],
 
 
                 list: {
@@ -90,21 +88,6 @@
                             entree: "Mini pizza",
                             prix: "15",
                             id: 1
-                        },
-                        {
-                            entree: "Mini 1",
-                            prix: "15",
-                            id: 2
-                        },
-                        {
-                            entree: "Mini 2",
-                            prix: "15",
-                            id: 3
-                        },
-                        {
-                            entree: "Mini 3",
-                            prix: "15",
-                            id: 4
                         }
 
                     ],
@@ -118,21 +101,6 @@
                             entree: "Pasta carbonara",
                             prix: "7",
                             id: 1
-                        },
-                        {
-                            entree: "Pasta 1",
-                            prix: "7",
-                            id: 2
-                        },
-                        {
-                            entree: "Pasta 2",
-                            prix: "7",
-                            id: 3
-                        },
-                        {
-                            entree: "Pasta 3",
-                            prix: "7",
-                            id: 4
                         }
                     ],
                     Delicatessen: [
@@ -391,7 +359,7 @@
                             id: 4
                         }
                     ],
-                    Latin: [
+                    "Latin (Cuban, Dominican, Puerto Rican, South & Central American)": [
                         {
                             entree: "Spicy Latin rice",
                             prix: "8",
